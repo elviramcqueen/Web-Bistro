@@ -98,8 +98,8 @@ href="https://www.embedgooglemap.net">embed map in email
 
 .topnav a.active {
 
-  background-color:black;
-  color: #E3DFCC;
+  background-color:#E3DFCC;
+  color: black;
   width: 120px;
 }
 
