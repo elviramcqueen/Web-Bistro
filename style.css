@@ -213,6 +213,7 @@ color:black;
   animation-duration: 1.5s;
 }
 
+/*detta är css:en för google mappen*/
 @-webkit-keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
@@ -223,16 +224,19 @@ color:black;
   to {opacity: 1}
 }
 
+/* textinformation*/
  .cooltext{
   color: #E3DFCC;
   font-size: 30px;
 }
 
+/*information om bakgrund*/
 .line{
   background-color: #E3DFCC;
   height: 2px;
 }
 
+/*informatin om texten i länkarna*/
 .uno{
  text-decoration: none;
  list-style-type: none;
@@ -250,6 +254,7 @@ color:black;
  list-style-type: none;
 
 }
+
 #logo{
    height: 100px;
 }
@@ -278,4 +283,16 @@ color:black;
 
     height: 300px;
   }
+}
+
+#link{
+
+  text-decoration: none;
+  color: #E3DFCC;
+  font-family: tangier, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 45px;
+  margin-top: 13%;
+
 }
