@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="grid.css">
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
 
 </head>
 
@@ -24,7 +25,7 @@
 </header>
 
 --
-<div id="topline"> </div>
+<div class="line"> </div>
     <div class="topnav">
      <a href="boka.html"> Boka </a>
      <a href="meny.html" class="active"> Meny </a>
@@ -32,48 +33,46 @@
      <a href="hittahit.html"> Hitta hit </a>
 
    </div>
-<div id="bottomline"> </div>
-
+<div class="line"> </div>
 
 <div class="slideshow-container">
 
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 5</div>
-    <img src="images/kottbullar.jpeg" style="width:100%">
-    <div class="text">Köttbullar</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/medium_mac.jpeg" style="width:100%" alt="Medium Mac">
+  <div class="text">medium mac</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 5</div>
-    <img src="images/currywurst2.jpeg" style="width:100%">
-    <div class="text">Currywurst</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/nuggets.jpeg" style="width:100%" alt="Nuggies">
+  <div class="text">Nuggies</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 5</div>
-    <img src="images/burgir2.jpeg" style="width:100%">
-    <div class="text">Burgir</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/varmkorv.jpeg" style="width:100%" alt="varfmkorv">
+  <div class="text">KORV</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 5</div>
-    <img src="images/nudlar.jpeg" style="width:100%">
-    <div class="text">Nudlar</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/mini_mac.jpeg" style="width:100%" alt="Mini Mac">
+  <div class="text">mini mac</div>
+</div>
 
-  <div class="mySlides fade">
-    <div class="numbertext">5 / 5</div>
-    <img src="images/tikka.jpeg" style="width:100%">
-    <div class="text">Tikka masala</div>
-  </div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/small_mac.jpeg" style="width:100%" alt="Small Mac">
+  <div class="text">small mac</div>
+</div>
 
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
 </div>
 <br>
 
-<!-- The dots/circles -->
 <div style="text-align:center">
   <span class="dot" onclick="currentSlide(1)"></span>
   <span class="dot" onclick="currentSlide(2)"></span>
@@ -82,6 +81,112 @@
   <span class="dot" onclick="currentSlide(5)"></span>
 </div>
 
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+
+<div id="slideshow" data-component="slideshow">
+        <div role="list">
+          <div class="slide">
+            <img src="images/small_mac.jpeg" alt="Small Mac">
+          </div>
+
+          <div class="slide">
+            <img src="images/medium_mac.jpeg" alt="Medium Mac">
+          </div>
+
+          <div class="slide">
+            <img src="images/mini_mac.jpeg" alt="Mini Mac">
+          </div>
+
+          <div class="slide">
+            <img src="images/nuggets.jpeg" alt="Chicken Nuggets">
+          </div>
+
+          <div class="slide">
+            <img src="images/varmkorv.jpeg" alt="Varmkorv">
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container">
+
+      <h1> Meny </h1>
+
+        <h2 id="h21"> Varmrätter </h2>
+
+          <p class="ul1"> Mini Mac </p>
+          <p class="ul1"> Small Mac </p>
+          <p class="ul1"> Medium Mac </p>
+          <p class="ul1"> Nuggies </p>
+          <p class="ul1"> KORV </p>
+          <p class="ul1"> Hasbullas kötbullas </p>
+          <p class="ul1"> Fisk-hasbullar </p>
+          <p class="ul1"> Mat </p>
+
+
+        <h2 id="h22"> Efterrätter </h2>
+
+         <ul class="ul2">
+
+          <li> Hasbullas bullar</li>
+          <li> Nötter och bollar </li>
+          <li> Sandpapper </li>
+
+        </ul>
+
+       <h2 id="h23"> </h2>
+
+
+
+
+
+
+      </div> <!-- container -->
+
+<footer>
+  <div class="line">  </div>
+
+  <h3>Kontakta oss</h3>
+  <ul class="uno">
+    <li> Tel: 069-420 69 69 </li>
+    <li> Instagram: t21.teg </li>
+    <li> YouTube: Mr Beast </li>
+
+
+  </ul>
+ <div class="line">
+ </div>
+
+</footer>
 
 </body>
 
