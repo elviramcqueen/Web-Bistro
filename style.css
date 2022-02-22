@@ -3,8 +3,50 @@ body{
 }
 
 footer{
+
   color: #E3DFCC;
-  font-family: 'Raleway';font-size: 22px;
+  font-family: 'Raleway';
+  font-size: 22px;
+}
+
+h1{
+
+  color: #E3DFCC;
+  font-family: 'Raleway';
+  font-size: 40px;
+
+}
+
+h2{
+
+  color: #E3DFCC;
+  font-family: 'Raleway';
+  font-size: 35px;
+}
+
+h3{
+
+  color: #E3DFCC;
+  font-family: 'Raleway';
+  font-size: 30px;
+
+}
+
+p{
+
+  color: #E3DFCC;
+  font-family: 'Raleway';
+  font-size: 25px;
+
+}
+
+li{
+
+  color: #E3DFCC;
+  font-family: 'Raleway';
+  font-size: 25px;
+
+
 }
 
 /* Navigationen på toppen av sidan */
