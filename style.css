@@ -220,3 +220,11 @@ color:black;
 #boka{
  width: 100%;
 }
+
+@media (max-width: 480px){
+
+  #finrestaurang{
+
+    height: 300px;
+  }
+}
