@@ -49,3 +49,32 @@ h1{
 
 
 }
+
+
+footer{
+
+  display: grid;
+  grid-template-columns: 1fr, 1fr;
+  grid-template-rows: auto;
+
+}
+
+.f00ter{
+
+ grid-row: 1/2;
+ grid-column: 1/2;
+
+}
+
+a{
+
+  grid-row: 1/2;
+  grid-column: 2/3;
+
+}
+
+.line{
+
+grid-column: 1/3;
+
+}
