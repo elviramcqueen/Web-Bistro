@@ -84,7 +84,7 @@ href="https://www.embedgooglemap.net">embed map in email
 
 }
 
-}
+
 
 /* När man håller musen på knappen */
 
@@ -282,6 +282,13 @@ color:black;
   #finrestaurang{
 
     height: 300px;
+  }
+
+
+  #textlogo{
+
+   height: 50px;
+
   }
 }
 
